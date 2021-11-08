@@ -1,5 +1,5 @@
-import { Flex, Heading } from "@chakra-ui/layout";
 import { BasicLayout } from "components/layout/BasicLayout";
+import { HomePage } from "container/Home";
 import type { NextPage } from "next";
 import Head from "next/head";
 
@@ -12,11 +12,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <BasicLayout>
-        <Flex flex="1" align="center">
-          <Heading w="100%" textAlign="center">
-            Home Page
-          </Heading>
-        </Flex>
+        <HomePage />
       </BasicLayout>
     </div>
   );
